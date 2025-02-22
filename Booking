@@ -1,0 +1,22 @@
+<section id="contact">
+    <h2>Get Started</h2>
+    <form id="contact-form" onsubmit="return handleSubmit(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Tell us about your goals" required></textarea>
+        <button type="submit">Book a Free Call</button>
+    </form>
+    <p>Or email: coach@fitflexonline.com | Phone: (555) 987-6543</p>
+</section>
+<script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        alert(`Thanks, ${name}! We'll email you soon at ${email}.`);
+        // For now, this just alerts. See Step 3 for real email.
+        document.getElementById('contact-form').reset();
+        return false;
+    }
+</script>
