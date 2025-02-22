@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFlex Online</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; text-align: center; background: #f5f5f5; }
+        header { background: #28a745; color: white; padding: 20px; }
+        nav { margin-top: 10px; }
+        nav a { color: white; text-decoration: none; padding: 0 10px; }
+        nav a:hover { text-decoration: underline; }
+        section { margin: 20px 0; }
+        .service { display: inline-block; width: 30%; margin: 1%; padding: 10px; background: white; border-radius: 5px; }
+        form { max-width: 400px; margin: 0 auto; }
+        input, textarea { width: 100%; margin: 10px 0; padding: 8px; box-sizing: border-box; }
+        textarea { height: 100px; }
+        button { background: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        button:hover { background: #218838; }
+        footer { margin-top: 40px; color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitFlex Online</h1>
+        <p>Fitness coaching for busy pros—anytime, anywhere</p>
+        <nav>
+            <a href="#about">About</a> | <a href="#services">Services</a> | <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We help busy professionals get fit with personalized online coaching—no gym required.</p>
+    </section>
+    <section id="services">
+        <h2>Our Plans</h2>
+        <div class="service">
+            <h3>Starter</h3>
+            <p>Weekly video check-ins + custom workout plan<br>$99/month</p>
+        </div>
+        <div class="service">
+            <h3>Pro</h3>
+            <p>Bi-weekly calls + plan + nutrition guide<br>$199/month</p>
+        </div>
+        <div class="service">
+            <h3>Elite</h3>
+            <p>Weekly calls + daily texting + full support<br>$299/month</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Get Started</h2>
+        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Tell us about your goals" required></textarea>
+            <button type="submit">Book a Free Call</button>
+        </form>
+        <p>Or email: coach@fitflexonline.com | Phone: (555) 987-6543</p>
+    </section>
+    <footer>
+        <p>© 2025 FitFlex Online</p>
+    </footer>
+</body>
+</html>
