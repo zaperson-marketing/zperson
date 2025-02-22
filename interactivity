@@ -1,0 +1,11 @@
+<header>
+    <h1>FitFlex Online</h1>
+    <p>Fitness coaching for busy pros—anytime, anywhere</p>
+    <nav>
+        <a href="#about">About</a> | <a href="#services">Services</a> | <a href="#contact">Contact</a>
+    </nav>
+</header>
+nav { margin-top: 10px; }
+nav a { color: white; text-decoration: none; padding: 0 10px; }
+nav a:hover { text-decoration: underline; }
+<link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
