@@ -1,0 +1,16 @@
+<section id="portal">
+    <h2>Client Portal (Demo)</h2>
+    <input type="text" id="goal" placeholder="Your weekly goal">
+    <button onclick="logGoal()">Log Goal</button>
+    <div id="goals"></div>
+    <script>
+        function logGoal() {
+            const goal = document.getElementById('goal').value;
+            if (goal) {
+                const goalsDiv = document.getElementById('goals');
+                goalsDiv.innerHTML += `<p>${new Date().toLocaleDateString()}: ${goal}</p>`;
+                document.getElementById('goal').value = '';
+            }
+        }
+    </script>
+</section>
